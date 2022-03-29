@@ -34,7 +34,7 @@ public class SNTools {
         paramsMap.put("output", "json");
         paramsMap.put("location", latAndLong);
         paramsMap.put("pois", "1");
-        paramsMap.put("ak", "XTT8Y9jF8ZR8VgjDCulGhgW6QpXkYBC7");
+        paramsMap.put("ak", "H3NxYy0cioHA0pFMLMtekYmiAPAfFDOB");
         String business = "";
 
         // 调用下面的toQueryString方法，对LinkedHashMap内所有value作utf8编码，拼接返回结果address=%E7%99%BE%E5%BA%A6%E5%A4%A7%E5%8E%A6&output=json&ak=yourak
@@ -42,7 +42,7 @@ public class SNTools {
         System.out.println(paramsStr);
 
         // 对paramsStr前面拼接上/geocoder/v2/?，后面直接拼接yoursk得到/geocoder/v2/?address=%E7%99%BE%E5%BA%A6%E5%A4%A7%E5%8E%A6&output=json&ak=yourakyoursk
-        String wholeStr = new String("/reverse_geocoding/v3/?" + paramsStr + "brChH6ym4vVZKgIyHl6cFGUN8xIBpjwa");
+        String wholeStr = new String("/reverse_geocoding/v3/?" + paramsStr + "hWTWG2MtpypC0CfHGQaeLRFqVonzpQOp");
 
         // 对上面wholeStr再作utf8编码
         String tempStr = URLEncoder.encode(wholeStr, "UTF-8");
